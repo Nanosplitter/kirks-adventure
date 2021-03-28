@@ -3,29 +3,36 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController:MonoBehaviour
 {
-    public float speed = 0;
-    private Rigidbody rb;
-    private float movementX;
-    private float movementY;
+    CharacterController characterController;
 
-    // Start is called before the first frame update
+    public float speed = 6.0f;
+    public float jumpSpeed = 8.0f;
+    public float gravity = 20.0f;
+
+    private Vector3 moveDirection = Vector3.zero;
+
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        characterController = GetComponent<CharacterController>();
     }
 
-    void OnMove(InputValue movementValue)
+    void Update()
     {
-        Vector2 movementVector = movementValue.Get<Vector2>();
-        movementX = movementVector.x;
-        movementY = movementVector.y;
-    }
+        if (characterController.isGrounded)
+        {
+            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+            moveDirection *= speed;
 
-    void FixedUpdate()
-    {
-        Vector3 movement = new Vector3(movementX, 0.0f, movementY);
-        rb.AddForce(movement * speed);
+            if (Input.GetButton("Jump"))
+            {
+                moveDirection.y = jumpSpeed;
+            }
+        }
+
+        moveDirection.y -= gravity * Time.deltaTime;
+
+        characterController.Move(moveDirection * Time.deltaTime);
     }
 }
