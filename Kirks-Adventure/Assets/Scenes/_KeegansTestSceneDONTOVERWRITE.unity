@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1713395142}
-  numEnemies: 1
+  numEnemies: 3
   enemyPrefabs:
   - {fileID: 6335546889652021423, guid: 941cc8bd85cbc3746b5e4b961898669e, type: 3}
   enemyPosMin: {x: 0, y: 0, z: 0}
