@@ -21,9 +21,10 @@ public class Spell : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (kirk.GetComponent<Rigidbody>().velocity.x > 0) {
+        // print(Input.GetAxis("Horizontal"));
+        if (Input.GetAxis("Horizontal") > 0) {
             kirkMovingRight = 1;
-        } else if (kirk.GetComponent<Rigidbody>().velocity.x < 0) {
+        } else if (Input.GetAxis("Horizontal") < 0) {
             kirkMovingRight = -1;
         }
 
