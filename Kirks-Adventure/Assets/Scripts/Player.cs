@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public GameObject player;
     public float maxHealth, health;
     public HealthBar healthBar;
+    public int goal;
 
 
     public void TakeDamage()
@@ -21,6 +22,11 @@ public class Player : MonoBehaviour
         {
             TakeDamage();
         }
+    }
+
+    public void OnDestroy()
+    {
+        goal++;
     }
 
 }
