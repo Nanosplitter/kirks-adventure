@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform player;
+    public Transform kirk;
 
     void FixedUpdate()
     {
-        transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
+        this.transform.position = new Vector3(kirk.transform.position.x, this.transform.position.y, this.transform.position.z);
     }
 }
