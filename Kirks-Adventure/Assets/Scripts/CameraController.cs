@@ -8,6 +8,6 @@ public class CameraController : MonoBehaviour
 
     void FixedUpdate()
     {
-        this.transform.position = new Vector3(kirk.transform.position.x, this.transform.position.y, this.transform.position.z);
+        this.transform.position = new Vector3(kirk.transform.position.x, kirk.transform.position.y, this.transform.position.z);
     }
 }
