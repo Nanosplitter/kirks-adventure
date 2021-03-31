@@ -130,6 +130,7 @@ MonoBehaviour:
   speed: 2
   jumpSpeed: 8
   gravity: 50
+  prefabProjectile: {fileID: 3229974683089606807, guid: 3419e7e222075e048a5c7b75ee77b322, type: 3}
 --- !u!143 &2070673284237718567
 CharacterController:
   m_ObjectHideFlags: 0

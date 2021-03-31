@@ -11,16 +11,19 @@ public class EnemyController : MonoBehaviour
     public float jumpSpeed = 8.0f;
     public float gravity = 50.0f;
     private int timeSettled = 50;
+    public GameObject prefabProjectile;
+    private GameObject projectile;
     private Vector3 moveDirection = Vector3.zero;
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         player = GameObject.Find("Player");
+        InvokeRepeating("ShootSpell", 1f, 1f);
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (this.GetComponent<Rigidbody>().velocity.y == 0 && timeSettled > 0) {
             timeSettled--;
@@ -29,7 +32,7 @@ public class EnemyController : MonoBehaviour
         if (timeSettled == 0) {
             if (Math.Abs(player.transform.position.x - this.transform.position.x) < 5) {
                 moveDirection = new Vector3(0.0f, 0.0f, 0.0f);
-            }else if (player.transform.position.x > this.transform.position.x) {
+            } else if (player.transform.position.x > this.transform.position.x) {
                 moveDirection = new Vector3(1.0f, 0.0f, 0.0f);
             } else {
                 moveDirection = new Vector3(-1.0f, 0.0f, 0.0f);
@@ -38,11 +41,25 @@ public class EnemyController : MonoBehaviour
             moveDirection *= speed;
             moveDirection.y -= gravity * Time.deltaTime;
             characterController.Move(moveDirection * Time.deltaTime);
+            
         }
         
 
         // moveDirection.y -= gravity * Time.deltaTime;
 
+        
+    }
+
+    void ShootSpell() {
+        projectile = Instantiate(prefabProjectile) as GameObject;
+        // Start it at the launchPoint
+        projectile.transform.position = this.transform.position;// + new Vector3(0.0f, 1f, 0.0f);
+        // projectile.GetComponent<Rigidbody>().isKinematic = true;
+        if (player.transform.position.x > this.transform.position.x) {
+            projectile.GetComponent<Rigidbody>().velocity = new Vector3(40, 0.0f, 0.0f);
+        } else {
+            projectile.GetComponent<Rigidbody>().velocity = new Vector3(-40, 0.0f, 0.0f);
+        }
         
     }
 }
