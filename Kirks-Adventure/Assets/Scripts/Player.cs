@@ -5,7 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public GameObject player;
-    public float maxHealth, health;
+    public float maxHealth = 100; 
+    public float health = 100;
     public HealthBar healthBar;
     public int goal;
 
