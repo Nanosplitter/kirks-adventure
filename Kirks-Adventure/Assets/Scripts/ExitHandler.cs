@@ -2,12 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class ExitHandler : MonoBehaviour
 {
     // Fields set in the Unity Inspector pane
     public GameObject player;
     private bool isTripped = false;
+    public Image youWin;
+
+    private void Start()
+    {
+        youWin.enabled = false;
+    }
 
     void Update()
     {
@@ -18,6 +25,7 @@ public class ExitHandler : MonoBehaviour
             //LEVEL COMPLETE
             print("LEVEL COMPLETE");
             isTripped = true;
+            youWin.enabled = true;
         }
     }
 }
