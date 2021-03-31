@@ -14,6 +14,8 @@ public class EnemyController : MonoBehaviour
     public GameObject prefabProjectile;
     private GameObject projectile;
     private Vector3 moveDirection = Vector3.zero;
+
+    public int health = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,8 +57,14 @@ public class EnemyController : MonoBehaviour
         // ..and if the GameObject you intersect has the tag 'Pick Up' assigned to it..
         if (other.gameObject.CompareTag("Spell"))
         {
+            if (health != 0) {
+                health--;
+            } else {
+                
+                Destroy(this.gameObject);
+            }
             other.gameObject.SetActive(false);
-            Destroy(this.gameObject);
+            
         }
     }
 
