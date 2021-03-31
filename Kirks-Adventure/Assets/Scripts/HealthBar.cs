@@ -19,7 +19,7 @@ public class HealthBar : MonoBehaviour
     {
         
         healthBarImage.fillAmount = Mathf.Clamp(player.health / player.maxHealth, 0, 1f);
-        if (healthBarImage.fillAmount < 0.01) dead.enabled = true;
+        if (healthBarImage.fillAmount <= 0) dead.enabled = true;
     }
 
 }

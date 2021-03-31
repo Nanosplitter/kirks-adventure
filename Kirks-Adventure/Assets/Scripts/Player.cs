@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage()
     {
-        health -= Mathf.Min(Random.value * 10, health / 4f);
+        health -= Random.value * 10;
         healthBar.UpdateHealthBar();
     }
 
