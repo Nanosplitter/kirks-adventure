@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage()
     {
-        health -= Mathf.Min(Random.value, health / 4f);
+        health -= Mathf.Min(Random.value * 10, health / 4f);
         healthBar.UpdateHealthBar();
     }
 
@@ -27,6 +27,16 @@ public class Player : MonoBehaviour
     public void OnDestroy()
     {
         goal++;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        // ..and if the GameObject you intersect has the tag 'Pick Up' assigned to it..
+        if (other.gameObject.CompareTag("Spell_Enemy"))
+        {
+            other.gameObject.SetActive(false);
+            TakeDamage();
+        }
     }
 
 }

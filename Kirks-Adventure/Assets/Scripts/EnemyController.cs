@@ -50,6 +50,16 @@ public class EnemyController : MonoBehaviour
         
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        // ..and if the GameObject you intersect has the tag 'Pick Up' assigned to it..
+        if (other.gameObject.CompareTag("Spell"))
+        {
+            other.gameObject.SetActive(false);
+            Destroy(this.gameObject);
+        }
+    }
+
     void ShootSpell() {
         projectile = Instantiate(prefabProjectile) as GameObject;
         // Start it at the launchPoint
