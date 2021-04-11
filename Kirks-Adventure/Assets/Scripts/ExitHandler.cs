@@ -20,7 +20,7 @@ public class ExitHandler : MonoBehaviour
     {
         
 
-        if (Math.Abs(player.transform.position.x - this.transform.position.x) < 10 && isTripped == false)
+        if (Math.Abs(player.transform.position.x - this.transform.position.x) < 940 && isTripped == false)
         { 
             //LEVEL COMPLETE
             print("LEVEL COMPLETE");

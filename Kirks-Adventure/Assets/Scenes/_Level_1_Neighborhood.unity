@@ -4964,7 +4964,7 @@ GameObject:
   - component: {fileID: 945936046}
   - component: {fileID: 945936045}
   m_Layer: 0
-  m_Name: Boundary (1)
+  m_Name: End Boundary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10902,7 +10902,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3149530119614545936, guid: ebb6b250f1f3dcf4096fcf0bc6894d6e, type: 3}
       propertyPath: m_Name
-      value: Boundary
+      value: Beginning Boundary
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebb6b250f1f3dcf4096fcf0bc6894d6e, type: 3}
