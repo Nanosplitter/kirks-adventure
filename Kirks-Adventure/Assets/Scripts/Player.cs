@@ -17,6 +17,12 @@ public class Player : MonoBehaviour
         healthBar.UpdateHealthBar();
     }
 
+    public void HealDamage()
+    {
+        health += Random.value * 10;
+        healthBar.UpdateHealthBar();
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.W))
