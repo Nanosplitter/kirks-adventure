@@ -13,7 +13,6 @@ public class SpellTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(this.transform.position.y);
         if (this.transform.position.y < -20) {
             Destroy(gameObject);
         }

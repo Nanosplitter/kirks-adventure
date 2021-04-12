@@ -11,20 +11,27 @@ public class CameraController : MonoBehaviour
 
     public AudioSource combatMusic;
 
-    void EnemyDidSpawn() {
+    public void EnemyDidSpawn() {
+        print("EnemyDidSpawn Called");
         enemiesAlive++;
     }
 
-    void EnemyDidDie() {
+    public void EnemyDidDie() {
+        print("EnemyDidDie Called");
         enemiesAlive--;
     }
     void FixedUpdate()
-    {
+    {  
+        // print(enemiesAlive);
         if (enemiesAlive > 0 && backgroundMusic.isPlaying) {
+            print("Playing combat music");
             backgroundMusic.Stop();
             combatMusic.Play();
         } else if (enemiesAlive == 0 && combatMusic.isPlaying) {
+            print("Playing background music");
             combatMusic.Stop();
+            backgroundMusic.Play();
+        } else if (!combatMusic.isPlaying && !backgroundMusic.isPlaying) {
             backgroundMusic.Play();
         }
     }

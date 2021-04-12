@@ -15,6 +15,8 @@ public class EnemyController : MonoBehaviour
     private GameObject projectile;
     private Vector3 moveDirection = Vector3.zero;
 
+    public GameObject cameraObj;
+
     public int health = 3;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,15 @@ public class EnemyController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         player = GameObject.Find("Player");
         InvokeRepeating("ShootSpell", 1f, 1f);
+    }
+
+    void Awake()
+    {
+        print("AHHHHHHHHHHHHH");
+        
+        cameraObj = GameObject.Find("Main Camera");
+        print(cameraObj);
+        cameraObj.GetComponent<CameraController>().EnemyDidSpawn();
     }
 
     // Update is called once per frame
@@ -62,6 +73,7 @@ public class EnemyController : MonoBehaviour
             } else {
                 
                 Destroy(this.gameObject);
+                cameraObj.GetComponent<CameraController>().EnemyDidDie();
             }
             Destroy(other.gameObject);
             
