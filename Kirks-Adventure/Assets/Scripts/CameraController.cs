@@ -5,9 +5,27 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public Transform kirk;
+    private int enemiesAlive = 0;
+    
+    public AudioSource backgroundMusic;
 
+    public AudioSource combatMusic;
+
+    void EnemyDidSpawn() {
+        enemiesAlive++;
+    }
+
+    void EnemyDidDie() {
+        enemiesAlive--;
+    }
     void FixedUpdate()
     {
-        this.transform.position = new Vector3(kirk.transform.position.x, kirk.transform.position.y + 3, this.transform.position.z);
+        if (enemiesAlive > 0 && backgroundMusic.isPlaying) {
+            backgroundMusic.Stop();
+            combatMusic.Play();
+        } else if (enemiesAlive == 0 && combatMusic.isPlaying) {
+            combatMusic.Stop();
+            backgroundMusic.Play();
+        }
     }
 }
