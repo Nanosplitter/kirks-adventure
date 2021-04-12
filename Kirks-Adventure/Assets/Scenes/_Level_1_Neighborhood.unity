@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16113,7 +16113,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kirk: {fileID: 1713395142}
-  prefabProjectile: {fileID: 3229974683089606807, guid: 3419e7e222075e048a5c7b75ee77b322, type: 3}
+  firePrefab: {fileID: 3229974683089606807, guid: 3419e7e222075e048a5c7b75ee77b322, type: 3}
+  waterPrefab: {fileID: 3229974683089606807, guid: 021aac7fd4570b2478f5eeb7e1d2f3c5, type: 3}
+  earthPrefab: {fileID: 3229974683089606807, guid: a75b1dad4e15c394090ca30115c461ee, type: 3}
+  airPrefab: {fileID: 3229974683089606807, guid: e8d57281a5216814a96a0c872ec5a123, type: 3}
   velocityMult: 4
 --- !u!4 &1864185921
 Transform:

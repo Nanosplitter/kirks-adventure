@@ -5,7 +5,6 @@ using UnityEngine;
 public class Spell : MonoBehaviour
 {
     public GameObject kirk;
-
     public GameObject firePrefab;
     public GameObject waterPrefab;
     public GameObject earthPrefab;
@@ -16,8 +15,7 @@ public class Spell : MonoBehaviour
     private bool isClicking = false;
     private int kirkMovingRight = 1;
 
-    void setSpell(string type)
-    {
+    void SetSpell(string type) {
         switch (type) {
             case "water":
                 prefabProjectile = waterPrefab;
@@ -35,14 +33,12 @@ public class Spell : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Start() {
+        SetSpell("earth");
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         // print(Input.GetAxis("Horizontal"));
         if (Input.GetAxis("Horizontal") > 0) {
             kirkMovingRight = 1;
