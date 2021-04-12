@@ -5,12 +5,34 @@ using UnityEngine;
 public class Spell : MonoBehaviour
 {
     public GameObject kirk;
-    public GameObject prefabProjectile;
+
+    public GameObject firePrefab;
+    public GameObject waterPrefab;
+    public GameObject earthPrefab;
+    public GameObject airPrefab;
+    private GameObject prefabProjectile;
     private GameObject projectile;
     public float velocityMult = 4f;
     private bool isClicking = false;
     private int kirkMovingRight = 1;
 
+    void setSpell(string type)
+    {
+        switch (type) {
+            case "water":
+                prefabProjectile = waterPrefab;
+                break;
+            case "air":
+                prefabProjectile = airPrefab;
+                break;
+            case "earth":
+                prefabProjectile = earthPrefab;
+                break;
+            case "fire":
+                prefabProjectile = firePrefab;
+                break;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
