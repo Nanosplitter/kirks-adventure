@@ -15,7 +15,7 @@ public class Spell : MonoBehaviour
     private bool isClicking = false;
     private int kirkMovingRight = 1;
 
-    void SetSpell(string type) {
+    public void SetSpell(string type) {
         switch (type) {
             case "water":
                 prefabProjectile = waterPrefab;
@@ -33,9 +33,9 @@ public class Spell : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start() {
+    /*void Start() {
         SetSpell("earth");
-    }
+    }*/
 
     // Update is called once per frame
     void Update() {

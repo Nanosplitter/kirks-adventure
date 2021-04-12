@@ -9,50 +9,15 @@ public class SpellBar : MonoBehaviour
     public Text water;
     public Text earth;
     public Text air;
-    public string currSpell;
+    public GameObject spellHandler;
    
-    /*void selectSpell(string currSpell)
-    {
-        if (currSpell == "Fire")
-        {
-            fire.enabled = true;
-            water.enabled = false;
-            earth.enabled = false;
-            air.enabled = false;
-        }
-
-        else if (currSpell == "Water")
-        {
-            fire.enabled = false;
-            water.enabled = true;
-            earth.enabled = false;
-            air.enabled = false;
-        }
-
-        else if (currSpell == "Earth")
-        {
-            fire.enabled = false;
-            water.enabled = false;
-            earth.enabled = true;
-            air.enabled = false;
-        }
-
-        else if (currSpell == "Air")
-        {
-            fire.enabled = false;
-            water.enabled = false;
-            earth.enabled = false;
-            air.enabled = true;
-        }
-    }*/
-
     void Start()
     {
         fire.text = "Fire";
         water.text = "";
         earth.text = "";
         air.text = "";
-        currSpell = "Fire";
+        spellHandler.GetComponent<Spell>().SetSpell("fire");
     }
 
     void Update()
@@ -63,7 +28,7 @@ public class SpellBar : MonoBehaviour
             water.text = "";
             earth.text = "";
             air.text = "";
-            currSpell = "Fire";
+            spellHandler.GetComponent<Spell>().SetSpell("fire");
         }
         else if (Input.GetKeyUp("2"))
         {
@@ -71,7 +36,7 @@ public class SpellBar : MonoBehaviour
             water.text = "Water";
             earth.text = "";
             air.text = "";
-            currSpell = "Water";
+            spellHandler.GetComponent<Spell>().SetSpell("water");
         }
         else if (Input.GetKeyUp("3"))
         {
@@ -79,7 +44,7 @@ public class SpellBar : MonoBehaviour
             water.text = "";
             earth.text = "Earth";
             air.text = "";
-            currSpell = "Earth";
+            spellHandler.GetComponent<Spell>().SetSpell("earth");
         }
         else if (Input.GetKeyUp("4"))
         {
@@ -87,7 +52,7 @@ public class SpellBar : MonoBehaviour
             water.text = "";
             earth.text = "";
             air.text = "Air";
-            currSpell = "Air";
+            spellHandler.GetComponent<Spell>().SetSpell("air");
         }
     }
 }
