@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
         // ..and if the GameObject you intersect has the tag 'Pick Up' assigned to it..
         if (other.gameObject.CompareTag("Spell_Enemy"))
         {
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
             TakeDamage();
         }
     }

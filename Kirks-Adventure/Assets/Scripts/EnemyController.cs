@@ -63,7 +63,7 @@ public class EnemyController : MonoBehaviour
                 
                 Destroy(this.gameObject);
             }
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
             
         }
     }
