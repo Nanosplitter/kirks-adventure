@@ -29,6 +29,7 @@ public class ExitHandler : MonoBehaviour
             print("LEVEL COMPLETE");
             if(levelNumber == 1){
                 SceneManager.LoadScene("_Level_2_City");
+                levelNumber++;
             }
             else{
                 isTripped = true;
