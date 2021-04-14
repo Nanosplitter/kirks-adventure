@@ -1,19 +1,7 @@
 fileFormatVersion: 2
 guid: 97a9ace5f4dd653458bcb439e560ad83
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -5877077463893513029
-    second: red_enemysheet_0
-  - first:
-      213: -4316974258161652039
-    second: red_enemysheet_1
-  - first:
-      213: 6922505291665913589
-    second: red_enemysheet_2
-  - first:
-      213: 8933243869435427358
-    second: red_enemysheet_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,95 +101,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: red_enemysheet_0
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 320
-        width: 130
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbc6c274f2d607ea0800000000000000
-      internalID: -5877077463893513029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: red_enemysheet_1
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 320
-        width: 190
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bee4c5d8c60714c0800000000000000
-      internalID: -4316974258161652039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: red_enemysheet_2
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 0
-        width: 200
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f63281c2eda11060800000000000000
-      internalID: 6922505291665913589
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: red_enemysheet_3
-      rect:
-        serializedVersion: 2
-        x: 380
-        y: 0
-        width: 220
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1a72a908f149fb70800000000000000
-      internalID: 8933243869435427358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e6e4a936e09dfcc45b95660484b19c1a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

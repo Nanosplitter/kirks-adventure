@@ -1,19 +1,7 @@
 fileFormatVersion: 2
 guid: c05afff7b78a889469f77184d1264a2b
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -1885558833897593552
-    second: white_enemysheet_0
-  - first:
-      213: 6728280120732676280
-    second: white_enemysheet_1
-  - first:
-      213: 6225730391612935952
-    second: white_enemysheet_2
-  - first:
-      213: -6680793078648468441
-    second: white_enemysheet_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,95 +101,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: white_enemysheet_0
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 320
-        width: 130
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0352f6e0b3625d5e0800000000000000
-      internalID: -1885558833897593552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: white_enemysheet_1
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 320
-        width: 190
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b0f7913f17af5d50800000000000000
-      internalID: 6728280120732676280
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: white_enemysheet_2
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 0
-        width: 200
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01f417b4ecc366650800000000000000
-      internalID: 6225730391612935952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: white_enemysheet_3
-      rect:
-        serializedVersion: 2
-        x: 380
-        y: 0
-        width: 220
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72c0541671e0943a0800000000000000
-      internalID: -6680793078648468441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 25833414ad43f5f48a73f52a0876ada5
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

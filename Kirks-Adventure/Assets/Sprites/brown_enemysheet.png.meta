@@ -1,19 +1,7 @@
 fileFormatVersion: 2
 guid: 7fda2ea36a5f01d42ad21f77679ded03
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -5017182587098412907
-    second: brown_enemysheet_0
-  - first:
-      213: -3025723097589584283
-    second: brown_enemysheet_1
-  - first:
-      213: 2541214152484675375
-    second: brown_enemysheet_2
-  - first:
-      213: 3268165035830545
-    second: brown_enemysheet_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,95 +101,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: brown_enemysheet_0
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 320
-        width: 130
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59849bae4036f5ab0800000000000000
-      internalID: -5017182587098412907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: brown_enemysheet_1
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 320
-        width: 190
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56e6a7bafd87206d0800000000000000
-      internalID: -3025723097589584283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: brown_enemysheet_2
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 0
-        width: 200
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2f5b09cec4344320800000000000000
-      internalID: 2541214152484675375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: brown_enemysheet_3
-      rect:
-        serializedVersion: 2
-        x: 380
-        y: 0
-        width: 220
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11d2708f06c9b0000800000000000000
-      internalID: 3268165035830545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 348cd55aa6d222c42a99c78add044bf3
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

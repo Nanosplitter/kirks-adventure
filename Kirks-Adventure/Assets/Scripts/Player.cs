@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 
     public void HealDamage()
     {
-        health += 1000;
+        health += 40;
         healthBar.UpdateHealthBar();
     }
 

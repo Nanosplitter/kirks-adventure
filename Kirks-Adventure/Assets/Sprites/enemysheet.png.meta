@@ -1,19 +1,7 @@
 fileFormatVersion: 2
 guid: 4a5b5e4536867244fb4f56cbc240bcf2
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -2865803891262921009
-    second: enemysheet_0
-  - first:
-      213: 4492565388024651448
-    second: enemysheet_1
-  - first:
-      213: -6560685416528572103
-    second: enemysheet_2
-  - first:
-      213: 8666000418558889465
-    second: enemysheet_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +43,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -113,95 +101,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: enemysheet_0
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 320
-        width: 130
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc667596b8e9a38d0800000000000000
-      internalID: -2865803891262921009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemysheet_1
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 320
-        width: 190
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8be9c63fa6cc85e30800000000000000
-      internalID: 4492565388024651448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemysheet_2
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 0
-        width: 200
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9319ab8af53c3f4a0800000000000000
-      internalID: -6560685416528572103
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemysheet_3
-      rect:
-        serializedVersion: 2
-        x: 380
-        y: 0
-        width: 220
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9fdc69b5771d34870800000000000000
-      internalID: 8666000418558889465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
