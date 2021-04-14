@@ -46,8 +46,8 @@ MonoBehaviour:
   player: {fileID: 0}
   numEnemies: 100
   enemyPrefabs:
-  - {fileID: 6335546889652021423, guid: 941cc8bd85cbc3746b5e4b961898669e, type: 3}
+  - {fileID: 2956175408706808624, guid: f72519ff08b03e64e90c1286d80bc897, type: 3}
   enemyPosMin: {x: 0, y: 0, z: 0}
   enemyPosMax: {x: 0, y: 0, z: 0}
   enemyInstances:
-  - {fileID: 6335546889652021423, guid: 941cc8bd85cbc3746b5e4b961898669e, type: 3}
+  - {fileID: 2956175408706808624, guid: f72519ff08b03e64e90c1286d80bc897, type: 3}

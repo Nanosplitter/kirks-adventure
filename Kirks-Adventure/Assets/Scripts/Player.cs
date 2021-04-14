@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 
     public void HealDamage()
     {
-        health += Random.value * 10;
+        health += 1000;
         healthBar.UpdateHealthBar();
     }
 
@@ -43,6 +43,12 @@ public class Player : MonoBehaviour
         {
             Destroy(other.gameObject);
             TakeDamage();
+        }
+
+        if (other.gameObject.CompareTag("Health_Potion"))
+        {
+            Destroy(other.gameObject);
+            HealDamage();
         }
     }
 
