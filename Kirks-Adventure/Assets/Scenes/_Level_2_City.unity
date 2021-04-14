@@ -9906,7 +9906,7 @@ MonoBehaviour:
   player: {fileID: 1713395142}
   maxHealth: 100
   health: 100
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 247679210}
   goal: 0
 --- !u!1 &1713448079
 GameObject:
