@@ -31,6 +31,10 @@ public class ExitHandler : MonoBehaviour
                 SceneManager.LoadScene("_Level_2_City");
                 levelNumber++;
             }
+            else if(levelNumber == 2){
+                SceneManager.LoadScene("_Level_3_Country");
+                levelNumber++;
+            }
             else{
                 isTripped = true;
                 youWin.enabled = true;
