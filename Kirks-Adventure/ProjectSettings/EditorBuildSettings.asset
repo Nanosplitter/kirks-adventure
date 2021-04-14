@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/_Level_1_Neighborhood.unity
     guid: ed8d59cf51a15bd4bbb7b67cfe937c57
   - enabled: 1
-    path: Assets/Scenes/_Level_2_City.unity
+    path: Assets/Scenes/_Level_3_Country.unity
     guid: ce37760e17ac9754b934a1c64d6f8de8
   m_configObjects: {}
