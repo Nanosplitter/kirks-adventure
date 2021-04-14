@@ -20,14 +20,14 @@ public class CameraController : MonoBehaviour
         print("EnemyDidDie Called");
         enemiesAlive--;
     }
-    void FixedUpdate()
+    void Update()
     {  
         // print(enemiesAlive);
         if (enemiesAlive > 0 && backgroundMusic.isPlaying) {
             print("Playing combat music");
             backgroundMusic.Stop();
             combatMusic.Play();
-        } else if (enemiesAlive == 0 && combatMusic.isPlaying) {
+        } else if (enemiesAlive <= 0 && combatMusic.isPlaying) {
             print("Playing background music");
             combatMusic.Stop();
             backgroundMusic.Play();
