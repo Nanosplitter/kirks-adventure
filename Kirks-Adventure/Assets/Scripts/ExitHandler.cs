@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ExitHandler : MonoBehaviour
 {
@@ -10,10 +11,12 @@ public class ExitHandler : MonoBehaviour
     public GameObject player;
     private bool isTripped = false;
     public Image youWin;
+    public int levelNumber;
 
     private void Start()
     {
         youWin.enabled = false;
+        levelNumber = 1;
     }
 
     void Update()
@@ -24,8 +27,14 @@ public class ExitHandler : MonoBehaviour
         { 
             //LEVEL COMPLETE
             print("LEVEL COMPLETE");
-            isTripped = true;
-            youWin.enabled = true;
+            if(levelNumber == 1){
+                SceneManager.LoadScene("_Level_2_City");
+            }
+            else{
+                isTripped = true;
+                youWin.enabled = true;
+            }
+            
         }
     }
 }
