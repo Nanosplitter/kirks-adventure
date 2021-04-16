@@ -11,7 +11,6 @@ public class ExitHandler : MonoBehaviour
     public GameObject player;
     private bool isTripped = false;
     public Image youWin;
-    public int levelNumber;
 
     private void Start()
     {
@@ -30,9 +29,8 @@ public class ExitHandler : MonoBehaviour
             if(sceneName == "_Level_1_Neighborhood"){
                 SceneManager.LoadScene("_Level_2_City");
             }
-            else if(sceneName == "_Level_2_Cit"){
+            else if(sceneName == "_Level_2_City"){
                 SceneManager.LoadScene("_Level_3_Country");
-                levelNumber++;
             }
             else if (sceneName == "_Level_3_Country") {
                 isTripped = true;
