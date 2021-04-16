@@ -25,6 +25,7 @@ public class ExitHandler : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene ();
         string sceneName = currentScene.name;
+        isTripped = false;
 
         if (Math.Abs(player.transform.position.x - this.transform.position.x) < 10 && isTripped == false)
         { 
@@ -32,14 +33,8 @@ public class ExitHandler : MonoBehaviour
             //LEVEL COMPLETE
             print("LEVEL COMPLETE");
             if(sceneName == "_Level_1_Neighborhood"){
-                int con = 0;
                 level1Pic.enabled = true;
-                while(con == 0){
-                    if(Input.GetKeyDown(KeyCode.N) == true){
-                        SceneManager.LoadScene("_Level_2_City");
-                        con++;
-                    }
-                }
+                SceneManager.LoadScene("_Level_2_City");
             }
             else if(sceneName == "_Level_2_City"){
                 SceneManager.LoadScene("_Level_3_Country");
