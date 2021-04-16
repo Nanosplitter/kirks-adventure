@@ -34,12 +34,20 @@ public class ExitHandler : MonoBehaviour
             print("LEVEL COMPLETE");
             if(sceneName == "_Level_1_Neighborhood"){
                 level1Pic.enabled = true;
-                SceneManager.LoadScene("_Level_2_City");
+                if(Input.GetKeyDown(KeyCode.N)){
+                    SceneManager.LoadScene("_Level_2_City");
+                }
             }
             else if(sceneName == "_Level_2_City"){
-                SceneManager.LoadScene("_Level_3_Country");
+                level2Pic.enabled = true;
+                level1Pic.enabled = false;
+                if(Input.GetKeyDown(KeyCode.N)){
+                    SceneManager.LoadScene("_Level_3_Country");
+                }
             }
             else if (sceneName == "_Level_3_Country") {
+                level1Pic.enabled = false;
+                level2Pic.enabled = false;
                 isTripped = true;
                 youWin.enabled = true;
             }
