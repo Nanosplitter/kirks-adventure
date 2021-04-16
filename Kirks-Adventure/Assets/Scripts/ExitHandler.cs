@@ -11,10 +11,14 @@ public class ExitHandler : MonoBehaviour
     public GameObject player;
     private bool isTripped = false;
     public Image youWin;
+    public Image level1Pic;
+    public Image level2Pic;
 
     private void Start()
     {
         youWin.enabled = false;
+        level1Pic.enabled = false;
+        level2Pic.enabled = false;
     }
 
     void Update()
@@ -24,10 +28,18 @@ public class ExitHandler : MonoBehaviour
 
         if (Math.Abs(player.transform.position.x - this.transform.position.x) < 10 && isTripped == false)
         { 
+            // if ( Input.GetKeyDown(KeyCode.LeftControl) == true )
             //LEVEL COMPLETE
             print("LEVEL COMPLETE");
             if(sceneName == "_Level_1_Neighborhood"){
-                SceneManager.LoadScene("_Level_2_City");
+                int con = 0;
+                level1Pic.enabled = true;
+                while(con == 0){
+                    if(Input.GetKeyDown(KeyCode.N) == true){
+                        SceneManager.LoadScene("_Level_2_City");
+                        con++;
+                    }
+                }
             }
             else if(sceneName == "_Level_2_City"){
                 SceneManager.LoadScene("_Level_3_Country");
