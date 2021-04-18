@@ -30,4 +30,9 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("_Instructions");
     }
 
+    public void InstructionsAfterStart()
+    {
+        SceneManager.LoadScene("_Instructions_After_Start");
+    }
+
 }
