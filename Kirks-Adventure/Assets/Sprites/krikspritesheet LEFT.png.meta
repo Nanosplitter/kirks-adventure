@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 69527eec2b1754b4b8a12b19a740e552
+guid: 73082edf38f044b4ca9a6f16601474c3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3961964601973766864
-    second: krikspritesheet_0
+      213: 680772170325884660
+    second: krikspritesheet LEFT_0
   - first:
-      213: -5748782381285162459
-    second: krikspritesheet_1
+      213: -3964746036076068466
+    second: krikspritesheet LEFT_1
   - first:
-      213: 4299287634895613695
-    second: krikspritesheet_2
+      213: -2640623206605444477
+    second: krikspritesheet LEFT_2
   - first:
-      213: -3305644619155440361
-    second: krikspritesheet_3
+      213: 1081827801257078354
+    second: krikspritesheet LEFT_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,31 +115,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: krikspritesheet_0
+      name: krikspritesheet LEFT_0
       rect:
         serializedVersion: 2
-        x: 44
-        y: 536
-        width: 190
-        height: 404
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0da715960d9bbf630800000000000000
-      internalID: 3961964601973766864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: krikspritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 279
+        x: 567
         y: 537
         width: 161
         height: 404
@@ -150,17 +129,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5224970f1e83830b0800000000000000
-      internalID: -5748782381285162459
+      spriteID: 4fefe399ea6927900800000000000000
+      internalID: 680772170325884660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: krikspritesheet_2
+      name: krikspritesheet LEFT_1
       rect:
         serializedVersion: 2
-        x: 473
+        x: 321
         y: 537
         width: 202
         height: 404
@@ -171,19 +150,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffeae2943532aab30800000000000000
-      internalID: 4299287634895613695
+      spriteID: e814c0f7c746af8c0800000000000000
+      internalID: -3964746036076068466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: krikspritesheet_3
+      name: krikspritesheet LEFT_2
       rect:
         serializedVersion: 2
-        x: 719
-        y: 539
-        width: 249
+        x: 23
+        y: 537
+        width: 250
         height: 404
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -192,8 +171,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71dfe81abbdff12d0800000000000000
-      internalID: -3305644619155440361
+      spriteID: 38a21a82f2f9a5bd0800000000000000
+      internalID: -2640623206605444477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: krikspritesheet LEFT_3
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 537
+        width: 211
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ee11a47ac630f00800000000000000
+      internalID: 1081827801257078354
       vertices: []
       indices: 
       edges: []
@@ -201,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5a56291ee778cb446bd7596bb0b0ff3e
+    spriteID: f7ededf67fe5c91448c69e9028112724
     internalID: 0
     vertices: []
     indices: 

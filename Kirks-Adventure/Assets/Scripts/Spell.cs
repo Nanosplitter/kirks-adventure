@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Spell : MonoBehaviour
 {
+    //public Animator animator;
+
     public GameObject kirk;
     public GameObject firePrefab;
     public GameObject waterPrefab;
@@ -39,6 +41,9 @@ public class Spell : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
+
+        //animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+
         // print(Input.GetAxis("Horizontal"));
         if (Input.GetAxis("Horizontal") > 0) {
             kirkMovingRight = 1;
@@ -49,6 +54,7 @@ public class Spell : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !isClicking) {
             projectile = Instantiate(prefabProjectile) as GameObject;
             // Start it at the launchPoint
+            //animator.SetBool("isShooting", true);
             projectile.transform.position = kirk.transform.position;// + new Vector3(0.0f, 1f, 0.0f);
             // projectile.GetComponent<Rigidbody>().isKinematic = true;
             projectile.GetComponent<Rigidbody>().velocity = new Vector3(40 * kirkMovingRight, 0.0f, 0.0f);
