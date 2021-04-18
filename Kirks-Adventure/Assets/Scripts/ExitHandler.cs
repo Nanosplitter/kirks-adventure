@@ -10,13 +10,13 @@ public class ExitHandler : MonoBehaviour
     // Fields set in the Unity Inspector pane
     public GameObject player;
     private bool isTripped = false;
-    public Image youWin;
+   // public Image youWin;
     public Image level1Pic;
     public Image level2Pic;
 
     private void Start()
     {
-        youWin.enabled = false;
+        //youWin.enabled = false;
         level1Pic.enabled = false;
         level2Pic.enabled = false;
     }
@@ -49,7 +49,7 @@ public class ExitHandler : MonoBehaviour
                 level1Pic.enabled = false;
                 level2Pic.enabled = false;
                 isTripped = true;
-                youWin.enabled = true;
+               // youWin.enabled = true;
             }
             
         }

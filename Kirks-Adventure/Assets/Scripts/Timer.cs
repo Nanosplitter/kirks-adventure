@@ -7,8 +7,11 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public Text TimerText;
-    private float startTime;
+    public Image healthBarImage;
 
+    private float startTime;
+    private float endTime;
+    public static string timeOfDeath;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,26 @@ public class Timer : MonoBehaviour
         float t = Time.time - startTime;
         string minutes = ((int)t / 60).ToString();
         string seconds = (t % 60).ToString("f2");
-        TimerText.text = minutes + ":" + seconds;
+
+        if ((t % 60) < 10)
+        {
+            TimerText.text = minutes + ":0" + seconds;
+        } else {
+            TimerText.text = minutes + ":" + seconds;
+        }
+
+        if (healthBarImage.fillAmount <= 0)
+        {
+            endTime = Time.time;
+            if ((t % 60) < 10)
+            {
+                timeOfDeath = minutes + ":0" + seconds;
+            }
+            else
+            {
+                timeOfDeath = minutes + ":" + seconds;
+            }
+            //TimerText.text = "";
+        }
     }
 }
