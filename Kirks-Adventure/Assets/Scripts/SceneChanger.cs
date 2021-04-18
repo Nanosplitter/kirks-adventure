@@ -25,4 +25,9 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("_StartScreen");
     }
 
+    public void Instructions()
+    {
+        SceneManager.LoadScene("_Instructions");
+    }
+
 }
