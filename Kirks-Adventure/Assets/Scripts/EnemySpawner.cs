@@ -22,7 +22,7 @@ public class EnemySpawner : MonoBehaviour
         enemyInstances = new GameObject[numEnemies];
         GameObject enemy;
 
-        if (Math.Abs(player.transform.position.x - this.transform.position.x) < 10 && isTripped == false)
+        if (Math.Abs(player.transform.position.x - this.transform.position.x) < 5 && isTripped == false)
         { 
             print(player.transform.position);
             for (int i = 0; i < numEnemies; i++)

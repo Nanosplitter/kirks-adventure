@@ -7,6 +7,10 @@ public class EnemyController : MonoBehaviour
 {
     CharacterController characterController;
     public GameObject player;
+    public GameObject enemy;
+
+    public Animator animator;
+
     public float speed = 1.0f;
     public float jumpSpeed = 8.0f;
     public float gravity = 50.0f;
@@ -23,6 +27,7 @@ public class EnemyController : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         player = GameObject.Find("Player");
+        enemy.transform.position = new Vector3(0, 0.0f, 0);
         InvokeRepeating("ShootSpell", 1f, 1f);
     }
 
@@ -38,6 +43,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (this.GetComponent<Rigidbody>().velocity.y == 0 && timeSettled > 0) {
             timeSettled--;
         }
@@ -56,11 +62,19 @@ public class EnemyController : MonoBehaviour
             characterController.Move(moveDirection * Time.deltaTime);
             
         }
-        
+
+        if (Math.Abs(player.transform.position.x) < this.transform.position.x)
+        {
+            animator.SetFloat("EnemyHorizontal", -1.0f);
+        } else
+        {
+            animator.SetFloat("EnemyHorizontal", 1.0f);
+        }
+
 
         // moveDirection.y -= gravity * Time.deltaTime;
 
-        
+
     }
 
     void OnTriggerEnter(Collider other)

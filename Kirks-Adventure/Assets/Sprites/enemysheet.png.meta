@@ -118,10 +118,10 @@ TextureImporter:
       name: enemysheet_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 461
-        width: 185
-        height: 507
+        x: 40
+        y: 680
+        width: 130
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,10 +139,10 @@ TextureImporter:
       name: enemysheet_1
       rect:
         serializedVersion: 2
-        x: 220
-        y: 464
-        width: 219
-        height: 505
+        x: 229
+        y: 680
+        width: 190
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: enemysheet_2
       rect:
         serializedVersion: 2
-        x: 454
-        y: 467
-        width: 227
-        height: 502
+        x: 461
+        y: 668
+        width: 200
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: enemysheet_3
       rect:
         serializedVersion: 2
-        x: 718
-        y: 470
-        width: 253
-        height: 331
+        x: 726
+        y: 676
+        width: 220
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

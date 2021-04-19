@@ -12,7 +12,6 @@ public class PlayerController:MonoBehaviour
     public float speed = 6.0f;
     public float jumpSpeed = 8.0f;
     public float gravity = 20.0f;
-    private bool isClicking = false;
 
     private Vector3 moveDirection = Vector3.zero;
 
