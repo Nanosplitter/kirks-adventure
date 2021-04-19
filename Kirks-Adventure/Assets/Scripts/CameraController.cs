@@ -11,6 +11,8 @@ public class CameraController : MonoBehaviour
 
     public AudioSource combatMusic;
 
+    public bool muted = false;
+
     public void EnemyDidSpawn() {
         print("EnemyDidSpawn Called");
         enemiesAlive++;
@@ -20,9 +22,21 @@ public class CameraController : MonoBehaviour
         print("EnemyDidDie Called");
         enemiesAlive--;
     }
+
+    public void MuteToggle()
+    {
+        muted = !muted;
+        
+    }
     void Update()
     {  
         // print(enemiesAlive);
+        if (muted) {
+            backgroundMusic.Stop();
+            combatMusic.Stop();
+            return;
+        }
+
         if (enemiesAlive > 0 && backgroundMusic.isPlaying) {
             print("Playing combat music");
             backgroundMusic.Stop();

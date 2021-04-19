@@ -55,7 +55,7 @@ public class Spell : MonoBehaviour
             projectile = Instantiate(prefabProjectile) as GameObject;
             // Start it at the launchPoint
             //animator.SetBool("isShooting", true);
-            projectile.transform.position = kirk.transform.position;// + new Vector3(0.0f, 1f, 0.0f);
+            projectile.transform.position = kirk.transform.position + new Vector3(0.0f, 1f, 0.0f);
             // projectile.GetComponent<Rigidbody>().isKinematic = true;
             projectile.GetComponent<Rigidbody>().velocity = new Vector3(40 * kirkMovingRight, 0.0f, 0.0f);
         }

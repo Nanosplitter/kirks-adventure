@@ -5,6 +5,7 @@ using UnityEngine;
 public class PauseController : MonoBehaviour
 {
     public GameObject PauseCanvas;
+    private GameObject cameraObj;
 
     void Start()
     {
@@ -13,6 +14,10 @@ public class PauseController : MonoBehaviour
 
     }
 
+    void Awake()
+    {
+        cameraObj = GameObject.Find("Main Camera");
+    }
     public void PauseGame()
     {
         PauseCanvas.SetActive(true);
@@ -23,5 +28,10 @@ public class PauseController : MonoBehaviour
     {
         Time.timeScale = 1;
         PauseCanvas.SetActive(false);
+    }
+
+    public void Mute()
+    {
+        cameraObj.GetComponent<CameraController>().MuteToggle();
     }
 }
