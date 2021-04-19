@@ -31,10 +31,10 @@ public class EnemySpawner : MonoBehaviour
 
                 enemy = Instantiate(enemyPrefabs[prefabNum]) as GameObject;
 
-                Vector3 enemyPos = new Vector3(player.transform.position.x + 15, player.transform.position.y, 0f);
+                Vector3 enemyPos = new Vector3(player.transform.position.x - 15, 0f, 0f);
 
                 enemy.transform.position = player.transform.position + new Vector3(10.0f, 0.0f, 0.0f);
-                print(enemy.transform.position);
+                //print(enemy.transform.position);
 
                 enemyInstances[i] = enemy;
 

@@ -51,7 +51,7 @@ public class Spell : MonoBehaviour
             kirkMovingRight = -1;
         }
 
-        if (Input.GetMouseButtonDown(0) && !isClicking) {
+        if ((Input.GetMouseButtonDown(0) && !isClicking) || (Input.GetKeyDown(KeyCode.RightControl) && !isClicking)) {
             projectile = Instantiate(prefabProjectile) as GameObject;
             // Start it at the launchPoint
             //animator.SetBool("isShooting", true);

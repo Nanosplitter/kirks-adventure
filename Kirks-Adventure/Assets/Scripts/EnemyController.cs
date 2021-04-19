@@ -7,7 +7,6 @@ public class EnemyController : MonoBehaviour
 {
     CharacterController characterController;
     public GameObject player;
-    public GameObject enemy;
 
     public Animator animator;
 
@@ -27,7 +26,6 @@ public class EnemyController : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         player = GameObject.Find("Player");
-        enemy.transform.position = new Vector3(0, 0.0f, 0);
         InvokeRepeating("ShootSpell", 1f, 1f);
     }
 
@@ -63,12 +61,12 @@ public class EnemyController : MonoBehaviour
             
         }
 
-        if (Math.Abs(player.transform.position.x) < this.transform.position.x)
+        if (player.transform.position.x > this.transform.position.x)
         {
-            animator.SetFloat("EnemyHorizontal", 1.0f);
+            animator.SetFloat("EnemyHorizontal", 1);
         } else
         {
-            animator.SetFloat("EnemyHorizontal", -1.0f);
+            animator.SetFloat("EnemyHorizontal", -1);
         }
 
 
