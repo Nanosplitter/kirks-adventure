@@ -3,7 +3,17 @@ guid: f4b4d6cc86ad0b84890c00a672643dc5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - kirk: {instanceID: 0}
+  - firePrefab: {instanceID: 0}
+  - waterPrefab: {instanceID: 0}
+  - earthPrefab: {instanceID: 0}
+  - airPrefab: {instanceID: 0}
+  - spellSound: {instanceID: 0}
+  - fire: {instanceID: 0}
+  - water: {instanceID: 0}
+  - earth: {instanceID: 0}
+  - air: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

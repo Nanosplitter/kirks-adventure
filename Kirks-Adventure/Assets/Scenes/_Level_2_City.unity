@@ -1974,6 +1974,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1306640386}
     m_Modifications:
     - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1713395142}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: numEnemies
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
       propertyPath: enemyPrefabs.Array.data[0]
       value: 
       objectReference: {fileID: 1513338052578622551, guid: a44bdb195e6371443910448513f53a92, type: 3}
@@ -5042,6 +5050,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1306640386}
     m_Modifications:
     - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1713395142}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: numEnemies
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
       propertyPath: enemyPrefabs.Array.data[0]
       value: 
       objectReference: {fileID: 1811853890787353083, guid: abd8a1ffb2b524d48b9ef06df75943fd, type: 3}
@@ -5639,6 +5655,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1306640386}
     m_Modifications:
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1713395142}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: numEnemies
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7224568508830441966, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
       propertyPath: m_Name
       value: EnemySpawner (15)
@@ -8608,6 +8632,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1306640386}
     m_Modifications:
     - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1713395142}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: numEnemies
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
       propertyPath: enemyPrefabs.Array.data[0]
       value: 
       objectReference: {fileID: 1924211053479249591, guid: 79fdd7b14b4b3b946998e72202b0d46f, type: 3}
@@ -9273,7 +9305,6 @@ MonoBehaviour:
   maxHealth: 100
   health: 100
   healthBar: {fileID: 203137282}
-  goal: 0
   ouch: {fileID: 1713395151}
 --- !u!82 &1713395151
 AudioSource:
@@ -9836,6 +9867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1864185921}
   - component: {fileID: 1864185920}
+  - component: {fileID: 1864185922}
   m_Layer: 0
   m_Name: SpellHandler
   m_TagString: Untagged
@@ -9861,11 +9893,11 @@ MonoBehaviour:
   earthPrefab: {fileID: 3229974683089606807, guid: a75b1dad4e15c394090ca30115c461ee, type: 3}
   airPrefab: {fileID: 3229974683089606807, guid: e8d57281a5216814a96a0c872ec5a123, type: 3}
   velocityMult: 4
-  spellSound: {fileID: 0}
-  fire: {fileID: 0}
-  water: {fileID: 0}
-  earth: {fileID: 0}
-  air: {fileID: 0}
+  spellSound: {fileID: 1864185922}
+  fire: {fileID: 8300000, guid: 4251eee7a62151342919569e6e7d63c6, type: 3}
+  water: {fileID: 8300000, guid: f0d49b05efbe33c40905a5a8400b9dc7, type: 3}
+  earth: {fileID: 8300000, guid: f0fe387cc7c21fa45a6bd42573d5332c, type: 3}
+  air: {fileID: 8300000, guid: 158f6b40058554040a6e1fe0795e3dfa, type: 3}
 --- !u!4 &1864185921
 Transform:
   m_ObjectHideFlags: 0
@@ -9880,6 +9912,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1864185922
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864185919}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1886020121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10241,7 +10369,7 @@ MonoBehaviour:
   water: {fileID: 1410333419}
   earth: {fileID: 460753500}
   air: {fileID: 1907798669}
-  spellHandler: {fileID: 0}
+  spellHandler: {fileID: 1864185919}
 --- !u!1 &1949709172
 GameObject:
   m_ObjectHideFlags: 0

@@ -914,7 +914,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Slay your bretheren and flee your homeland
+  m_Text: Find the land of the Quickspeakers and reunite with your family
 --- !u!222 &148371161
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12035,7 +12035,6 @@ MonoBehaviour:
   maxHealth: 100
   health: 100
   healthBar: {fileID: 817952136}
-  goal: 0
   ouch: {fileID: 1713395151}
 --- !u!82 &1713395151
 AudioSource:

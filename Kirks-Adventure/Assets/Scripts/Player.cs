@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     public float maxHealth = 100; 
     public float health = 100;
     public HealthBar healthBar;
-    public int goal;
     public AudioSource ouch;
 
     public void TakeDamage()
@@ -30,11 +29,6 @@ public class Player : MonoBehaviour
         {
             TakeDamage();
         }
-    }
-
-    public void OnDestroy()
-    {
-        goal++;
     }
 
     void OnTriggerEnter(Collider other)

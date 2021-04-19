@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
     CharacterController characterController;
     public GameObject player;
+    public Image enemyHealth;
 
     public Animator animator;
 
@@ -21,7 +23,8 @@ public class EnemyController : MonoBehaviour
     private string weak;
     private string strong;
     private GameObject cameraObj;
-    private int health = 100;
+    public int health = 100;
+    public int maxHealth = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -99,10 +102,13 @@ public class EnemyController : MonoBehaviour
                 print(spellName);
                 if (spellName.Equals(strong)) {
                     health -= 5;
+                    enemyHealth.fillAmount = health / maxHealth;
                 } else if (spellName.Equals(weak)) {
                     health -= 34;
+                    enemyHealth.fillAmount = health / maxHealth;
                 } else {
                     health -= 15;
+                    enemyHealth.fillAmount = health / maxHealth;
                 }
             } else {
                 Destroy(this.gameObject);
