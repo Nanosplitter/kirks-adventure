@@ -17,10 +17,11 @@ public class EnemyController : MonoBehaviour
     public GameObject prefabProjectile;
     private GameObject projectile;
     private Vector3 moveDirection = Vector3.zero;
-
-    public GameObject cameraObj;
-
-    public int health = 3;
+    public string type;
+    private string weak;
+    private string strong;
+    private GameObject cameraObj;
+    private int health = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +33,19 @@ public class EnemyController : MonoBehaviour
     void Awake()
     {
         print("AHHHHHHHHHHHHH");
-        
+        if (type.Equals("fire")) {
+            strong = "Fire(Clone)";
+            weak = "Water(Clone)";
+        } else if (type.Equals("water")) {
+            strong = "Water(Clone)";
+            weak = "Earth(Clone)";
+        } else if (type.Equals("air")) {
+            strong = "Air(Clone)";
+            weak = "Fire(Clone)";
+        } else if (type.Equals("earth")) {
+            strong = "Earth(Clone)";
+            weak = "Water(Clone)";
+        }
         cameraObj = GameObject.Find("Main Camera");
         print(cameraObj);
         cameraObj.GetComponent<CameraController>().EnemyDidSpawn();
@@ -80,15 +93,22 @@ public class EnemyController : MonoBehaviour
         // ..and if the GameObject you intersect has the tag 'Pick Up' assigned to it..
         if (other.gameObject.CompareTag("Spell"))
         {
-            if (health != 0) {
-                health--;
+            print(health);
+            if (health > 0) {
+                string spellName = other.gameObject.name;
+                print(spellName);
+                if (spellName.Equals(strong)) {
+                    health -= 5;
+                } else if (spellName.Equals(weak)) {
+                    health -= 34;
+                } else {
+                    health -= 15;
+                }
             } else {
-                
                 Destroy(this.gameObject);
                 cameraObj.GetComponent<CameraController>().EnemyDidDie();
             }
             Destroy(other.gameObject);
-            
         }
     }
 

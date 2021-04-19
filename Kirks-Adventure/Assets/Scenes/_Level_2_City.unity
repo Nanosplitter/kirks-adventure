@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1039,6 +1039,10 @@ PrefabInstance:
       propertyPath: numEnemies
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: enemyPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1513338052578622551, guid: a44bdb195e6371443910448513f53a92, type: 3}
     - target: {fileID: 7224568508830441966, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
       propertyPath: m_Name
       value: EnemySpawner (10)
@@ -1411,6 +1415,10 @@ PrefabInstance:
       propertyPath: numEnemies
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: enemyPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1513338052578622551, guid: a44bdb195e6371443910448513f53a92, type: 3}
     - target: {fileID: 7224568508830441966, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
       propertyPath: m_Name
       value: EnemySpawner (3)
@@ -3109,6 +3117,10 @@ PrefabInstance:
       propertyPath: numEnemies
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: enemyPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1924211053479249591, guid: 79fdd7b14b4b3b946998e72202b0d46f, type: 3}
     - target: {fileID: 7224568508830441966, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
       propertyPath: m_Name
       value: EnemySpawner (8)
@@ -3274,6 +3286,10 @@ PrefabInstance:
       propertyPath: numEnemies
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: enemyPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1924211053479249591, guid: 79fdd7b14b4b3b946998e72202b0d46f, type: 3}
     - target: {fileID: 7224568508830441966, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
       propertyPath: m_Name
       value: EnemySpawner (2)
@@ -3833,6 +3849,10 @@ PrefabInstance:
       propertyPath: numEnemies
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: enemyPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1513338052578622551, guid: a44bdb195e6371443910448513f53a92, type: 3}
     - target: {fileID: 7224568508830441966, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
       propertyPath: m_Name
       value: EnemySpawner (6)
@@ -6616,6 +6636,7 @@ MonoBehaviour:
   kirk: {fileID: 1713395147}
   backgroundMusic: {fileID: 1325323252}
   combatMusic: {fileID: 1325323251}
+  muted: 0
 --- !u!1 &1422619655
 GameObject:
   m_ObjectHideFlags: 0
@@ -7054,6 +7075,10 @@ PrefabInstance:
       propertyPath: numEnemies
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: enemyPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1811853890787353083, guid: abd8a1ffb2b524d48b9ef06df75943fd, type: 3}
     - target: {fileID: 7224568508830441966, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
       propertyPath: m_Name
       value: EnemySpawner (7)
@@ -8387,6 +8412,10 @@ PrefabInstance:
       propertyPath: numEnemies
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: enemyPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1924211053479249591, guid: 79fdd7b14b4b3b946998e72202b0d46f, type: 3}
     - target: {fileID: 7224568508830441966, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
       propertyPath: m_Name
       value: EnemySpawner (4)
@@ -9102,6 +9131,10 @@ PrefabInstance:
       propertyPath: numEnemies
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7224568508830441964, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
+      propertyPath: enemyPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1811853890787353083, guid: abd8a1ffb2b524d48b9ef06df75943fd, type: 3}
     - target: {fileID: 7224568508830441966, guid: 4d878a026619d4a41a3e40f8ab4f8c9f, type: 3}
       propertyPath: m_Name
       value: EnemySpawner (1)

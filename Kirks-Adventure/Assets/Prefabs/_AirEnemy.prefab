@@ -113,13 +113,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  enemy: {fileID: 2956175408706808624}
   animator: {fileID: 6998182457714130290}
   speed: 2
   jumpSpeed: 8
   gravity: 20
   prefabProjectile: {fileID: 3229974683089606807, guid: 423e0ffb89552f848ac79a5c68087366, type: 3}
-  cameraObj: {fileID: 0}
+  type: air
   health: 3
 --- !u!95 &6998182457714130290
 Animator:
