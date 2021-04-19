@@ -65,10 +65,10 @@ public class EnemyController : MonoBehaviour
 
         if (Math.Abs(player.transform.position.x) < this.transform.position.x)
         {
-            animator.SetFloat("EnemyHorizontal", -1.0f);
+            animator.SetFloat("EnemyHorizontal", 1.0f);
         } else
         {
-            animator.SetFloat("EnemyHorizontal", 1.0f);
+            animator.SetFloat("EnemyHorizontal", -1.0f);
         }
 
 
