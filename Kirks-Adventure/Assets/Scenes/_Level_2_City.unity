@@ -1601,7 +1601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4878cd02bedbcae4c986162cc6620eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseCanvas: {fileID: 0}
+  PauseCanvas: {fileID: 1517144528}
 --- !u!4 &399308420
 Transform:
   m_ObjectHideFlags: 0
@@ -2811,7 +2811,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 399308419}
         m_TargetAssemblyTypeName: PauseController, Assembly-CSharp
         m_MethodName: PauseGame
         m_Mode: 1
@@ -7800,7 +7800,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 399308419}
         m_TargetAssemblyTypeName: PauseController, Assembly-CSharp
         m_MethodName: Mute
         m_Mode: 1
@@ -7933,7 +7933,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 399308419}
         m_TargetAssemblyTypeName: PauseController, Assembly-CSharp
         m_MethodName: UnpauseGame
         m_Mode: 1
@@ -9351,7 +9351,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 988338778}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: StartMenu
         m_Mode: 1
