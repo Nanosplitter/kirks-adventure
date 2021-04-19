@@ -14,13 +14,11 @@ public class CameraController : MonoBehaviour
     public bool muted = false;
 
     public void EnemyDidSpawn() {
-        print("EnemyDidSpawn Called");
-        enemiesAlive++;
+        StartCombat();
     }
 
     public void EnemyDidDie() {
-        print("EnemyDidDie Called");
-        enemiesAlive--;
+        StartBackground();
     }
 
     public void MuteToggle()
@@ -28,6 +26,21 @@ public class CameraController : MonoBehaviour
         muted = !muted;
         
     }
+
+    public void StartCombat() {
+        if (!muted) {
+            backgroundMusic.Stop();
+            combatMusic.Play();
+        }
+    }
+
+    public void StartBackground() {
+        if (!muted) {
+            combatMusic.Stop();
+            backgroundMusic.Play();
+        }
+    }
+
     void Update()
     {  
         // print(enemiesAlive);
@@ -37,15 +50,8 @@ public class CameraController : MonoBehaviour
             return;
         }
 
-        if (enemiesAlive > 0 && backgroundMusic.isPlaying) {
-            print("Playing combat music");
-            backgroundMusic.Stop();
-            combatMusic.Play();
-        } else if (enemiesAlive <= 0 && combatMusic.isPlaying) {
-            print("Playing background music");
-            combatMusic.Stop();
-            backgroundMusic.Play();
-        } else if (!combatMusic.isPlaying && !backgroundMusic.isPlaying) {
+        
+        if (!combatMusic.isPlaying && !backgroundMusic.isPlaying) {
             backgroundMusic.Play();
         }
     }
