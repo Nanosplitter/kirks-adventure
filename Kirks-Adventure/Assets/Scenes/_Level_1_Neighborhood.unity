@@ -3879,7 +3879,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mute
+  m_Text: Mute Music
 --- !u!222 &537651845
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8677,7 +8677,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 419c9fd948a8cd84a98191d0a5499f2b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.117
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8873,6 +8873,7 @@ MonoBehaviour:
   backgroundMusic: {fileID: 1325323252}
   combatMusic: {fileID: 1325323251}
   muted: 0
+  pauseMuted: 0
 --- !u!1001 &1334464597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9255,8 +9256,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 323.4018, y: 198.5}
-  m_SizeDelta: {x: 41.9159, y: 34.915}
+  m_AnchoredPosition: {x: 299.83414, y: 144.5}
+  m_SizeDelta: {x: 81.6477, y: 34.915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1413043053
 MonoBehaviour:
@@ -10070,7 +10071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 370.12753, y: 198.49586}
+  m_AnchoredPosition: {x: 366.42584, y: 144.49588}
   m_SizeDelta: {x: 39.745, y: 34.9084}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1528385195
@@ -11866,7 +11867,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 07e52ce1cb7cb1b47af29a047eeecf2b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

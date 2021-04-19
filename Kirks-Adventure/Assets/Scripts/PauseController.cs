@@ -22,12 +22,14 @@ public class PauseController : MonoBehaviour
     {
         PauseCanvas.SetActive(true);
         Time.timeScale = 0; // Freezes time
+        cameraObj.GetComponent<CameraController>().pauseMuted = true;
     }
 
     public void UnpauseGame()
     {
         Time.timeScale = 1;
         PauseCanvas.SetActive(false);
+        cameraObj.GetComponent<CameraController>().pauseMuted = false;
     }
 
     public void Mute()

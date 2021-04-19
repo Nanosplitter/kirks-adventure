@@ -13,6 +13,8 @@ public class CameraController : MonoBehaviour
 
     public bool muted = false;
 
+    public bool pauseMuted = false;
+
     public void EnemyDidSpawn() {
         StartCombat();
     }
@@ -28,14 +30,14 @@ public class CameraController : MonoBehaviour
     }
 
     public void StartCombat() {
-        if (!muted) {
+        if (!muted && !pauseMuted) {
             backgroundMusic.Stop();
             combatMusic.Play();
         }
     }
 
     public void StartBackground() {
-        if (!muted) {
+        if (!muted && !pauseMuted) {
             combatMusic.Stop();
             backgroundMusic.Play();
         }
@@ -44,7 +46,7 @@ public class CameraController : MonoBehaviour
     void Update()
     {  
         // print(enemiesAlive);
-        if (muted) {
+        if (muted || pauseMuted) {
             backgroundMusic.Stop();
             combatMusic.Stop();
             return;
