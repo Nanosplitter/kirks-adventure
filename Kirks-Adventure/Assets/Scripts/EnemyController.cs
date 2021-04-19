@@ -23,8 +23,8 @@ public class EnemyController : MonoBehaviour
     private string weak;
     private string strong;
     private GameObject cameraObj;
-    public int health = 100;
-    public int maxHealth = 100;
+    public float health = 100;
+    public float maxHealth = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -102,13 +102,13 @@ public class EnemyController : MonoBehaviour
                 print(spellName);
                 if (spellName.Equals(strong)) {
                     health -= 5;
-                    enemyHealth.fillAmount = health / maxHealth;
+                    enemyHealth.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1f);
                 } else if (spellName.Equals(weak)) {
                     health -= 34;
-                    enemyHealth.fillAmount = health / maxHealth;
+                    enemyHealth.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1f);
                 } else {
                     health -= 15;
-                    enemyHealth.fillAmount = health / maxHealth;
+                    enemyHealth.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1f);
                 }
             } else {
                 Destroy(this.gameObject);
