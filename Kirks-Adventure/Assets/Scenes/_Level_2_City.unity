@@ -1601,7 +1601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4878cd02bedbcae4c986162cc6620eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseCanvas: {fileID: 0}
+  PauseCanvas: {fileID: 1517144528}
 --- !u!4 &399308420
 Transform:
   m_ObjectHideFlags: 0
@@ -2811,7 +2811,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 399308419}
         m_TargetAssemblyTypeName: PauseController, Assembly-CSharp
         m_MethodName: PauseGame
         m_Mode: 1
@@ -7707,7 +7707,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 399308419}
         m_TargetAssemblyTypeName: PauseController, Assembly-CSharp
         m_MethodName: Mute
         m_Mode: 1
@@ -7840,7 +7840,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 399308419}
         m_TargetAssemblyTypeName: PauseController, Assembly-CSharp
         m_MethodName: UnpauseGame
         m_Mode: 1
@@ -8173,6 +8173,7 @@ MonoBehaviour:
   health: 100
   healthBar: {fileID: 0}
   goal: 0
+  ouch: {fileID: 0}
 --- !u!1 &1713448079
 GameObject:
   m_ObjectHideFlags: 0
@@ -8606,6 +8607,11 @@ MonoBehaviour:
   earthPrefab: {fileID: 3229974683089606807, guid: a75b1dad4e15c394090ca30115c461ee, type: 3}
   airPrefab: {fileID: 3229974683089606807, guid: e8d57281a5216814a96a0c872ec5a123, type: 3}
   velocityMult: 4
+  spellSound: {fileID: 0}
+  fire: {fileID: 0}
+  water: {fileID: 0}
+  earth: {fileID: 0}
+  air: {fileID: 0}
 --- !u!4 &1864185921
 Transform:
   m_ObjectHideFlags: 0
@@ -9251,7 +9257,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 988338778}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: StartMenu
         m_Mode: 1
