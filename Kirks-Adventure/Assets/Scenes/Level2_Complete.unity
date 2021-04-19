@@ -255,16 +255,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 121409460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 2064916234097673511, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: -1967631576421560919, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 8056856818456041789, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: 3279352641294131588, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: 3837173908680883260, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 4502412055082496612, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 4754684134866288074, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
 --- !u!114 &121409462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,6 +523,8 @@ MonoBehaviour:
   kirk: {fileID: 0}
   backgroundMusic: {fileID: 279986847}
   combatMusic: {fileID: 279986845}
+  muted: 0
+  pauseMuted: 0
 --- !u!82 &279986847
 AudioSource:
   m_ObjectHideFlags: 0
@@ -700,7 +710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632895436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.3, y: 270.08575, z: -95.75314}
+  m_LocalPosition: {x: -23.6, y: 270.08575, z: -95.75314}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -819,8 +829,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 978, y: 550}
+  m_AnchoredPosition: {x: -21.127808, y: 30.0509}
+  m_SizeDelta: {x: 1316.0461, y: 822.9019}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1407229924
 MonoBehaviour:
@@ -870,7 +880,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1410563335}
   - component: {fileID: 1410563334}
-  - component: {fileID: 1410563333}
   - component: {fileID: 1410563332}
   - component: {fileID: 1410563331}
   - component: {fileID: 1410563330}
@@ -962,7 +971,7 @@ MonoBehaviour:
   maxHealth: 100
   health: 100
   healthBar: {fileID: 0}
-  goal: 0
+  ouch: {fileID: 0}
 --- !u!143 &1410563332
 CharacterController:
   m_ObjectHideFlags: 0
@@ -981,21 +990,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1410563333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410563328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc4e43c55d0690e42a7e1c71128e412b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jumpSpeed: 8
-  gravity: 20
 --- !u!54 &1410563334
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1020,7 +1014,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410563328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.35, y: 0.79, z: -4.3321667}
+  m_LocalPosition: {x: -23.6, y: 2.12, z: -4.3321667}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 279986844}
@@ -1312,8 +1306,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -108.4}
-  m_SizeDelta: {x: 119.6192, y: 248.92}
+  m_AnchoredPosition: {x: -0.000015259, y: -61.168}
+  m_SizeDelta: {x: 78.6317, y: 154.4623}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1696377371
 MonoBehaviour:
