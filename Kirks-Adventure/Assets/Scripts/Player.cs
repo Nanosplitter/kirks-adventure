@@ -9,11 +9,12 @@ public class Player : MonoBehaviour
     public float health = 100;
     public HealthBar healthBar;
     public int goal;
-
+    public AudioSource ouch;
 
     public void TakeDamage()
     {
         health -= Random.value * 10;
+        ouch.Play();
         healthBar.UpdateHealthBar();
     }
 
